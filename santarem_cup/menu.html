@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="x-icon" href="icon.jpg">  
+  <title>Santarém Cup</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The navigation menu -->
+
+<div class="navbar">
+  <a href="mvp.html">MVP</a>
+  <div class="subnav">
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">SUB-8 <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="melhormarcadorsub8.php"> Melhor Marcador</a>
+      <a href="melhorjogadorsub8.php">Jogador Jogo</a>
+      <a href="melhorguardaredessub8.php">Guarda Redes Jogo</a>
+     
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">SUB-10 <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="melhormarcadorsub10.php">Melhor Marcador</a>
+      <a href="melhorjogadorsub10.php">Jogador Jogo</a>
+      <a href="melhorguardaredessub10.php">Guarda Redes Jogo</a>
+     
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">SUB-11 <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="melhormarcadorsub11.php">Melhor Marcador</a>
+      <a href="melhorjogadorsub11.php">Jogador Jogo</a>
+      <a href="melhorguardaredessub11.php">Guarda Redes Jogo</a>
+     
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">SUB-13 <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="melhormarcadorsub13.php">Melhor Marcador</a>
+      <a href="melhorjogadorsub13.php">Jogador Jogo</a>
+      <a href="melhorguardaredessub13.php">Guarda Redes Jogo</a>
+     
+    </div>
+  </div>
+</div>
+  
+</body> 
+
+
+
+<style>
+    /* The navigation menu */
+
+.navbar {
+    display: flex;
+  justify-content: center;
+    background-color: #333;
+  margin-bottom: 600px;
+  align-items: center;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+        
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(28, 65, 250);
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(42, 203, 232);
+    width: 100%;
+    z-index: 1;
+    justify-content: center; /* centraliza o conteúdo na horizontal */
+    text-align: center;
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+</style>
+
+<html>
+  <head>
+    <title>Slideshow Images</title>
+    
+        <style>
+            .slider {
+              width: 600px;
+              height: 400px;
+              background-color: yellow;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: -500px;
+              text-align: center;
+              overflow: hidden;
+            }
+            .image-container {
+              width: 3600px;
+              background-color: pink;
+              height: 400px;
+              clear: both;
+              position: relative;
+              -webkit-transition: left 2s;
+              -moz-transition: left 2s;
+              -o-transition: left 2s;
+              transition: left 2s;
+            }
+            .slide {
+              float: left;
+              margin: 0px;
+              padding: 0px;
+              position: relative;
+            }
+            #slide-1:target ~ .image-container {
+              left: 0px;
+            }
+            #slide-2:target ~ .image-container {
+              left: -600px;
+            }
+            #slide-3:target ~ .image-container {
+              left: -1200px;
+            }
+            #slide-4:target ~ .image-container {
+              left: -1800px;
+            }
+            #slide-5:target ~ .image-container {
+              left: -2400px;
+            }
+            #slide-6:target ~ .image-container {
+              left: -3000px;
+            }
+          
+            .buttons {
+              position: relative;
+              top: -20px;
+            }
+            .buttons a {
+              display: inline-block;
+              height: 15px;
+              width: 15px;
+              border-radius: 50px;
+              background-color: rgb(0, 0, 0);
+            }
+          </style>
+    
+  </head>
+  <body>
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <span id="slide-4"></span>
+      <span id="slide-5"></span>
+      <span id="slide-6"></span>
+      <div class="image-container">
+        <img src="1.jpg" class="slide" width="600" height="400" />
+        <img src="2.jpg" class="slide" width="600" height="400" />
+        <img src="3.jpg" class="slide" width="600" height="400" />
+        <img src="4.jpg" class="slide" width="600" height="400" />
+        <img src="5.jpg" class="slide" width="600" height="400" />
+        <img src="6.jpg" class="slide" width="600" height="400" />
+        
+      </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+        <a href="#slide-4"></a>
+        <a href="#slide-5"></a>
+        <a href="#slide-6"></a>
+      </div>
+    </div>
+  </body>
+</html>
+</html>

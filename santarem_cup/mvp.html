@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="x-icon" href="icon.jpg">  
+    <title>Santarém Cup</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+
+    <style>
+        .half {
+            width: 50%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="half">
+        <h1>Melhor Jogador/Melhor Guarda Redes</h1>
+
+        <form action="process-form.php" method="post">
+
+
+            <label for="name">Equipa</label>
+            <input type="text" id="name2" name="name2">
+
+            <label for="name">NºCamisola</label>
+            <input type="text" id="name3" name="name3">   
+
+            <label for="priority">Escalão</label>
+            <select id="priority" name="priority">
+                <option value="sub-8" selected>Sub-8</option>
+                <option value="sub-10">Sub-10</option>
+                <option value="sub-11">Sub-11</option>
+                <option value="sub-13">Sub-13</option>
+            </select>
+
+            <fieldset>
+                <legend>Tipo</legend>
+
+                <label>
+                    <input type="radio" name="type" value="1" checked>
+                    Guarda Redes do Jogo
+                </label>
+
+                <br>
+
+                <label>
+                    <input type="radio" name="type" value="2">
+                    Jogador Jogo
+                </label>
+
+            </fieldset>
+            <br>
+
+            <button>Send</button>
+
+        </form>
+    </div>
+
+    <div class="half">      
+        <h1>Melhor Marcador</h1>
+
+        <form action="melhormarcardor.php" method="post">
+
+
+            <label for="name6">Equipa</label>
+            <input type="text" id="name6" name="name6">
+
+            <label for="name7">NºCamisola</label>
+            <input type="text" id="name7" name="name7">   
+
+            <label for="priority1">Escalão</label>
+            <select id="priority1" name="priority1">
+                <option value="sub-8" selected>Sub-8</option>
+                <option value="sub-10">Sub-10</option>
+                <option value="sub-11">Sub-11</option>
+                <option value="sub-13">Sub-13</option>
+            </select>
+
+            <label for="name8">Nº Golos Marcados</label>
+            <input type="text" id="name8" name="name8">
+
+            <br>
+
+            <button>Send</button>
+        </form>
+    </div>
+
+
+    <style>
+        
+        .half {
+            width: 50%;
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 100px;
+        }
+        
+        .half:first-child {
+            margin-left: -100px;
+            padding-left: 0px;
+            
+        }
+        
+        
+    </style>
+
+
+</body>
+
+
+
+</html> 

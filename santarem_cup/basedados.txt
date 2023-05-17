@@ -1,0 +1,32 @@
+create table mvp( id int PRIMARY KEY AUTO_INCREMENT, nome varchar(100), equipa varchar(100), nºcamisola int, escalao text, tipo int );
+
+    create table melhormarcador(
+    id int PRIMARY key AUTO_INCREMENT,
+        nome varchar(100),
+        equipa varchar(100),
+        nºcamisola	int,
+        escalao text,
+        golos int
+
+
+    ); 
+
+
+
+    SELECT nome, equipa, nºcamisola, escalao, COUNT(*) as Pontos
+    FROM mvp
+    WHERE tipo = 1
+    GROUP BY nome, equipa, nºcamisola, escalao
+    HAVING COUNT(*) > 1;
+
+
+
+    ------------------melhor marcador por escalão----------------
+    select nome,equipa,nºcamisola,escalao, sum(golos) as golos from melhormarcador where escalao="sub-10" 
+    group by nome,equipa,nºcamisola, escalao="sub-10" order by golos desc limit 3;
+
+
+
+
+    ---------melhor jogador----------------
+    SELECT nome, equipa, nºcamisola, escalao, COUNT(*) as Pontos FROM mvp WHERE tipo = 2 AND escalao = 'sub-8' GROUP BY nome, equipa, nºcamisola, escalao ORDER BY Pontos DESC;
